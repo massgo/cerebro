@@ -5,9 +5,9 @@ connect:
 	docker run -it --rm --link postgres:postgres postgres psql -h postgres -U postgres
 
 download:
-	wget https://www.usgo.org/mm/tdlista.txt
+	wget -c https://www.usgo.org/mm/tdlista.txt
 
-load:
+load: download
 	./cerebro.py
 
 clean:
