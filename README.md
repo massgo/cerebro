@@ -20,6 +20,7 @@ postgres=#
 ## Django-portion: 
 
 Currently the Django portion of this project is in development and set to use SQLite. To set things up locally: 
+
     1. Ensure packages in `requirements.txt` are installed
     2. From the Django project root directory [cerebro](cerebro) run `python manage.py makemigrations; python manage.py migrate`
     3. Create a superuser with `python manage.py createsuperuser` and follow prompts (login is required to view data) 
