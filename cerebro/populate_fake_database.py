@@ -12,8 +12,18 @@ django.setup()
 
 from main.models import AGAMember
 
+""" 
+This script creates 50 :class:`AGAMember`s whose fields are populated
+with random stuff (of the appropriate type).
+"""
+
 def random_gen(N):
-    """Generate a random string w/ integers of size N"""
+    """Generate a random string w/ uppercase letters and integers
+   
+    Args:
+        N (int): Size of random string to be returned
+
+    """
     return ''.join(random.choices(string.ascii_uppercase + string.digits, k=N))
 
 # Create 50 random AGAMembers

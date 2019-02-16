@@ -55,7 +55,8 @@ ROOT_URLCONF = 'cerebro.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')] # 2019.02.16 - Added template directory
+,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
