@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <table>
+        {% for member in agamember_list.all %}
+        <tr>
+            <td>{{ member.aga_id }}</td>
+            <td>{{ member.name }}</td>
+        {% endfor %}
+        </table>
+    <body>
+</html>
